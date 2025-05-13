@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Plain5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        'primary-light': '#3b82f6',
+                        'accent-green': '#059669',
+                        'accent-red': '#dc2626',
+                        'gray-bg': '#f9fafb',
+                        'gray-border': '#e5e7eb',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="index.html" class="text-2xl font-bold text-primary">Plain5</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="about.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            About
+                        </a>
+                        <a href="pricing.html" class="border-primary text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Pricing
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <a href="login.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-primary-light">
+                        Sign in
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Simple, transparent pricing</h1>
+            <p class="mt-5 max-w-xl mx-auto text-xl text-gray-500">Choose the plan that's right for you.</p>
+        </div>
+
+        <!-- Pricing Plans -->
+        <div class="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-1 md:grid-cols-3 sm:gap-6 lg:max-w-6xl lg:mx-auto xl:max-w-none xl:grid-cols-3">
+            <!-- Free Plan -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-border">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-900">Free</h3>
+                    <p class="mt-4 text-gray-500">Anyone with a one‑off bill, denial, or letter</p>
+                    <p class="mt-8">
+                        <span class="text-4xl font-extrabold text-gray-900">$0</span>
+                        <span class="text-base font-medium text-gray-500">/month</span>
+                    </p>
+                    <ul class="mt-6 space-y-4">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">1 Project</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">Up to 2 PDFs (≤ 50 pages each)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">30 chat queries / month</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">Single draft per task</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">Community‑forum support</span>
+                        </li>
+                    </ul>
+                    <div class="mt-8">
+                        <a href="login.html" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-light">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plus Plan -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-primary">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-900">Plus</h3>
+                    <p class="mt-4 text-gray-500">Homeowners, travelers, caregivers—anyone who deals with paperwork a few times a year</p>
+                    <p class="mt-8">
+                        <span class="text-4xl font-extrabold text-gray-900">$14.99</span>
+                        <span class="text-base font-medium text-gray-500">/month</span>
+                    </p>
+                    <ul class="mt-6 space-y-4">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">Unlimited Projects & Docs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">1,000 chat queries / month (≈ 30/day)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">Task reminders & calendar iCal feed</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">Unlimited draft versions with history</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">Priority indexing (2× faster)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">Email support (24 h target)</span>
+                        </li>
+                    </ul>
+                    <div class="mt-8">
+                        <a href="login.html" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-light">
+                            Subscribe
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family Add-on -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-border">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-900">Family add‑on</h3>
+                    <p class="mt-4 text-gray-500">Spouse & up to 3 dependents sharing one Vault</p>
+                    <p class="mt-8">
+                        <span class="text-4xl font-extrabold text-gray-900">+$6</span>
+                        <span class="text-base font-medium text-gray-500">/ month</span>
+                    </p>
+                    <ul class="mt-6 space-y-4">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">Separate log‑ins, shared storage</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">Per‑member activity view</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent-green flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span class="ml-3 text-base text-gray-500">Shared or private Projects</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="mt-20">
+            <h2 class="text-3xl font-extrabold text-gray-900 text-center">Frequently asked questions</h2>
+            <div class="mt-12 max-w-3xl mx-auto">
+                <dl class="space-y-10">
+                    <div>
+                        <dt class="text-lg font-medium text-gray-900">What types of documents can Plain5 process?</dt>
+                        <dd class="mt-2 text-base text-gray-500">
+                            Plain5 can process a wide range of documents including insurance policies, medical bills, legal documents, and more. Our AI is trained to understand complex language and provide clear summaries.
+                        </dd>
+                    </div>
+                    <div>
+                        <dt class="text-lg font-medium text-gray-900">How secure is my data?</dt>
+                        <dd class="mt-2 text-base text-gray-500">
+                            We take security seriously. All documents are encrypted in transit and at rest. We use industry-standard security practices and regular security audits to ensure your data is protected.
+                        </dd>
+                    </div>
+                    <div>
+                        <dt class="text-lg font-medium text-gray-900">Can I cancel my subscription?</dt>
+                        <dd class="mt-2 text-base text-gray-500">
+                            Yes, you can cancel your subscription at any time. If you cancel, you'll still have access to your plan until the end of your billing period.
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="mt-8 border-t border-gray-200 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    © 2025 Plain5. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
